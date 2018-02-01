@@ -1,2 +1,11 @@
+@import './grids/grids-min.css';
+@import './grids/grids-responsive-min.css';
 @import './base/settings';
 @import './base/base';
+@import './components/header';
+@import './components/dashboard-page';
+@import './components/add-form';
+@import './components/cash-totals';
+@import './components/last-operations';
+@import './components/settings-page';
+@import './components/currency-widget';

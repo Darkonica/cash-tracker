@@ -34,16 +34,33 @@ module.exports = (env) => {
 						}
 					]
 				})
-			}]
+			}, {
+        test: /\.(png|jp(e*)g|svg)$/,  
+        use: [{
+          loader: 'url-loader',
+          options: { 
+            limit: 100, // Convert images < 8kb to base64 strings
+            name: './public/images/[hash]-[name].[ext]'
+          } 
+        }]
+      }
+			]
 		},
 		plugins: [
 			CSSExtract
 		],
 		devtool: isProduction ? 'source-map' : 'inline-source-map',
 		devServer: {
+			host: "dev.darkonica.com",
+			port: 80,
 			contentBase: path.join(__dirname, 'public'),
 			historyApiFallback: true,
-			publicPath: '/dist/'
+			publicPath: '/dist/',
+			headers: {
+	      "Access-Control-Allow-Origin": "http://dev.darkonica.com",
+      	"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      	"Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+  		}
 		}
 	};
 };

@@ -1,0 +1,57 @@
+.item-cont {
+	color: #FFF;
+	margin: 10px 0;
+	padding: 15px 20px;
+	display: flex;
+  justify-content: space-between;
+
+	&.income {
+		background: $second-color;
+	}
+	&.expense {
+		background: $main-color;
+	}
+
+	a {
+		color: #FFF;
+	}
+
+	.info {
+		width: 90%;
+		padding: 0 15px 0 0;
+		
+		.upper-part {
+			font-size: $md-size;
+			padding: 0 0 1rem 0;
+			display: flex;
+	    justify-content: space-between;
+			border-bottom: 1px solid #ccc;
+		}
+		.lower-part {
+			font-size: $sm-size;
+			padding: 1rem 0 0 0;
+			display: flex;
+	    justify-content: space-between;
+	    word-break: break-word;
+	    
+	    .date {
+	    	min-width: 120px;
+	    	text-align: right;
+	    }
+		}
+	}
+	.actions {
+		width: 10%;
+    text-align: right;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #ccc;
+    
+    > div {
+    	  margin: 0 0 10px 0;
+    }
+    .remove {
+    	cursor: pointer;
+    }
+	}
+	
+}

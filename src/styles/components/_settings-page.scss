@@ -1,0 +1,26 @@
+aside {
+  width: 25%;
+  float: left;
+  
+  ul {
+  	list-style: none;
+  }
+}
+main {
+  width: 75%;
+  float: left;
+}
+
+.add-category-form {
+	.block {
+		box-sizing: border-box;
+	}
+	input {
+		width: 100%;
+		font-size: $base-size;
+		padding: 10px 15px;
+		vertical-align: top;
+		box-sizing: border-box;
+		border: none
+	}
+}

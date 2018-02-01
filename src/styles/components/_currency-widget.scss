@@ -1,0 +1,19 @@
+.currency-widget {
+	text-align: center;
+	
+	.flex-cont {
+		margin: 0 auto;
+		align-items: center;
+	}
+	.icon {
+		width: 48px;
+		height: 48px;
+		background: url('/images/analytics.svg') no-repeat;
+		background-size: cover;
+	}
+	.block {
+		h3 {
+			margin-top: 0;
+		}
+	}
+}

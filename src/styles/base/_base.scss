@@ -5,15 +5,39 @@ html {
 body {
 	font-family: Helvetica, sans-serif;
 	font-size: $base-size;
-	background-color: #fff;
+	color: $text-color;
+	background-color: $bg-color;
+}
+a {
+	color: $text-color;
+	text-decoration: none;
 }
 
 .is-active {
 	font-weight: bold;
 }
 
+.wrapper {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.flex-cont {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 button {
 	cursor: pointer;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+	color: #FFF;
+	font-weight: bold;
+	background: $main-color;
+	border: none;
 	
 	&:disabled {
 		cursor: default;
